@@ -36,7 +36,7 @@ class PostsController < ApplicationController
 		@post = Post.find(params[:id])
 		
 		if @post.update(params[:post].permit(:tile, :body))
-			redirect_to root
+			redirect_to @post
 		else
 			render 'edit'
 		end 
