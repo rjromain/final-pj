@@ -40,7 +40,7 @@ class PostsController < ApplicationController
 		else
 			render 'edit'
 		end 
-	end 
+	end
 
 	
 	private 
